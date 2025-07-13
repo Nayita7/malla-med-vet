@@ -1,1 +1,49 @@
+/* estilos.css */
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffeef8;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #c2185b;
+}
+
+#malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ramo {
+  background-color: #f8bbd0;
+  border: 2px solid #c2185b;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+  opacity: 0.4;
+}
+
+.ramo:hover {
+  background-color: #f48fb1;
+}
+
+.ramo.activo {
+  opacity: 1;
+}
+
+.ramo.aprobado {
+  text-decoration: line-through;
+  background-color: #f06292;
+  color: white;
+}
